@@ -1,8 +1,8 @@
 /**
- * @fileoverview Central export barrel for the @cli-share/core package.
+ * @fileoverview Central export barrel for the cli-share-core package.
  * Re-exports all public APIs from the sub-modules so consumers can do:
  *
- *   const { format, uploadGist, getToken } = require('@cli-share/core');
+ *   const { format, uploadGist, getToken } = require('cli-share-core');
  *
  * @module cli-share/core
  */

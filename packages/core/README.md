@@ -1,4 +1,4 @@
-# @cli-share/core
+# cli-share-core
 
 **Share your terminal conversations instantly as professional GitHub Gists.**
 

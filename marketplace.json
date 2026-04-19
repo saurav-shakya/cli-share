@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "cli-share",
+      "name": "@saurav-shakya/cli-share",
       "description": "Share your AI CLI conversations to GitHub Gists instantly with perfect formatting.",
       "version": "1.0.0",
       "source": {

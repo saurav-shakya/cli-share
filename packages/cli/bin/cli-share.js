@@ -17,7 +17,7 @@ async function main() {
   const open = (await import('open')).default;
 
   // Utilize the core package which exposes formatter, uploader, and auth utilities by default
-  const core = require('@cli-share/core');
+  const core = require('cli-share-core');
   const { format, uploadGist, getToken } = core;
 
   // 1. Read captured log from the environment or default paths (checking both new and old namespaces)

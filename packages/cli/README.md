@@ -17,7 +17,7 @@ CLI Share is a powerful tool designed for developers using AI CLI tools (like Cl
 ## 🚀 Installation
 
 ```bash
-npm install -g cli-share
+npm install -g @saurav-shakya/cli-share
 ```
 
 ## 🛠️ Setup

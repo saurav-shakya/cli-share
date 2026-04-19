@@ -1,5 +1,5 @@
 {
-  "name": "@cli-share/core",
+  "name": "cli-share-core",
   "version": "1.0.0",
   "description": "Core logic for terminal stdout capture and gist uploading",
   "main": "src/index.js",

@@ -192,7 +192,7 @@ cli-share/
 │   │   ├── formatter.js
 │   │   ├── auth.js
 │   │   └── uploader.js
-│   ├── cli/                     ← npx cli-share standalone tool
+│   ├── cli/                     ← npx @saurav-shakya/cli-share standalone tool
 │   │   ├── index.js             ← #!/usr/bin/env node
 │   │   └── package.json
 │   └── claude-plugin/           ← Claude Code integration
@@ -442,7 +442,7 @@ async function uploadGist(content, { token, isPublic, filename, description }) {
 
 ---
 
-## 2.5 CLI Package (`npx cli-share`)
+## 2.5 CLI Package (`npx @saurav-shakya/cli-share`)
 
 Full interactive CLI entry point with `inquirer` prompts.
 
@@ -535,7 +535,7 @@ main().catch((err) => {
     "cli-share": "./index.js"
   },
   "dependencies": {
-    "@cli-share/core": "workspace:*",
+    "cli-share-core": "workspace:*",
     "inquirer": "^9.0.0",
     "chalk": "^5.0.0",
     "open": "^9.0.0"
@@ -558,7 +558,7 @@ Claude Code reads custom commands from `.claude/commands/` in any project direct
 description: Share this conversation to GitHub Gist
 ---
 
-Execute the cli-share CLI: run `npx cli-share` in the current terminal.
+Execute the cli-share CLI: run `npx @saurav-shakya/cli-share` in the current terminal.
 This will capture the session, prompt for options, and return a shareable GitHub Gist URL.
 ```
 
@@ -705,7 +705,7 @@ function checkSensitiveData(content) {
 | Phase | Feature | Status |
 |-------|---------|--------|
 | v1.0 | `/share` command + GitHub Gist upload | 🏗️ Build now |
-| v1.0 | `npx cli-share` standalone CLI | 🏗️ Build now |
+| v1.0 | `npx @saurav-shakya/cli-share` standalone CLI | 🏗️ Build now |
 | v1.0 | Claude Code `/share` plugin | 🏗️ Build now |
 | v1.1 | HTML export with ANSI color preservation | 📋 Planned |
 | v1.1 | Session history dashboard (local) | 📋 Planned |

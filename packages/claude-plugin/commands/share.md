@@ -13,9 +13,9 @@ Mode: `--full` OR `--range=START-END`
 Visibility: `--public` OR `--private`
 
 Example Commands you should run based on their answer:
-`npx cli-share --full --public`
-`npx cli-share --range=10-20 --private`
+`npx @saurav-shakya/cli-share --full --public`
+`npx @saurav-shakya/cli-share --range=10-20 --private`
 
-Do NOT use `! npx cli-share`. Run it standardly once you have the flags!
+Do NOT use `! npx @saurav-shakya/cli-share`. Run it standardly once you have the flags!
 After the CLI outputs the URL, show the URL to the user.
 
