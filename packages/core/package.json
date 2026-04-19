@@ -1,6 +1,6 @@
 {
   "name": "cli-share-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core logic for terminal stdout capture and gist uploading",
   "main": "src/index.js",
   "scripts": {
