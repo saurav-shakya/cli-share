@@ -29,9 +29,34 @@ npm install -g @saurav-singh/cli-share
    - Export it: `export GITHUB_TOKEN=your_token`
    - Or save it: Our tool will prompt you once and save it to `~/.cli-share/config.json`.
 
-2. **Claude Code Integration**:
-   If you use Claude Code, you can use our wrapper to enable conversational sharing.
-   See [packages/claude-plugin](packages/claude-plugin/README.md) for details.
+## 🤖 Claude Code Integration
+
+CLI Share works best when integrated directly into your **Claude Code** session as a slash command.
+
+### Method A: Official Plugin (Recommended)
+The easiest way to install CLI Share is using the native plugin system:
+```bash
+/plugin marketplace add saurav-shakya/cli-share
+```
+
+### Method B: Manual Skill Setup
+If you prefer manual setup, copy the skill definition to your Claude config:
+```bash
+mkdir -p ~/.claude/commands/
+cp packages/claude-plugin/commands/share.md ~/.claude/commands/
+```
+
+### 🔴 Essential: Enable Session Recording
+Claude Code doesn't save your terminal output to a file by default. To share conversations, you must use our **session wrapper**:
+
+1. Find your `claude` binary path: `which claude`
+2. Rename it: `mv $(which claude) $(dirname $(which claude))/claude-code-real`
+3. Link our wrapper: 
+   ```bash
+   ln -s $(pwd)/packages/claude-plugin/wrapper.sh /usr/local/bin/claude
+   ```
+
+Now, every time you run `claude`, it will be recorded and ready to share via `/share`.
 
 ---
 
@@ -51,6 +76,23 @@ This will launch an interactive wizard to choose:
 ```bash
 cli-share --full --public
 cli-share --range=1-50 --private
+```
+
+### 🎨 How it looks in Claude Code
+
+When you are in a Claude Code session, you can simply type `/share`:
+
+```text
+❯ /share
+● Do you want to share the (1)Full Conversation or a (2)Custom Range?
+  (3)Public or (4)Private?
+
+❯ 1 and 3
+
+● Uploading to GitHub Gist...
+✅ Gist created: https://gist.github.com/saurav-singh/af12999ea...
+
+● Your conversation has been shared publicly!
 ```
 
 ---
