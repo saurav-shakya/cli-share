@@ -1,6 +1,6 @@
 {
   "name": "@saurav-singh/cli-share",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Share your AI CLI conversations to GitHub Gists instantly.",
   "bin": {
     "cli-share": "./bin/cli-share.js"
