@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saurav-shakya/cli-share.git"
+    "url": "git+https://github.com/saurav-singh/cli-share.git"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
