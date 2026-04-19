@@ -10,7 +10,10 @@
       "name": "cli-share",
       "description": "Share your AI CLI conversations to GitHub Gists instantly with perfect formatting.",
       "version": "1.0.3",
-      "source": ".",
+      "source": {
+        "repo": "saurav-shakya/cli-share",
+        "ref": "main"
+      },
       "category": "utilities",
       "tags": ["share", "gist", "terminal", "capture"]
     }
