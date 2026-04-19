@@ -5,7 +5,7 @@
   "author": "Saurav Shakya",
   "skills": {
     "share": {
-      "path": "skills/share/SKILL.md"
+      "path": "packages/claude-plugin/commands/share.md"
     }
   }
 }
