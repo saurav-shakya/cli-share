@@ -1,16 +1,16 @@
 {
   "name": "@saurav-singh/cli-share",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Share your AI CLI conversations to GitHub Gists instantly.",
   "bin": {
     "cli-share": "./bin/cli-share.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saurav-singh/cli-share.git"
+    "url": "git+https://github.com/saurav-shakya/cli-share.git"
   },
   "dependencies": {
-    "cli-share-core": "1.0.0",
+    "cli-share-core": "1.0.2",
     "chalk": "^5.0.0",
     "inquirer": "^9.0.0",
     "open": "^9.0.0"

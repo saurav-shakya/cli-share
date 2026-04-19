@@ -1,6 +1,6 @@
 {
   "name": "cli-share-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core logic for terminal stdout capture and gist uploading",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saurav-singh/cli-share.git"
+    "url": "git+https://github.com/saurav-shakya/cli-share.git"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",

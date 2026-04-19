@@ -12,7 +12,7 @@
       "version": "1.0.0",
       "source": {
         "type": "git",
-        "url": "https://github.com/saurav-singh/cli-share"
+        "url": "https://github.com/saurav-shakya/cli-share"
       },
       "category": "utilities",
       "tags": ["share", "gist", "terminal", "capture"]
