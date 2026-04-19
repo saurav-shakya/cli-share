@@ -1,0 +1,12 @@
+{
+  "name": "cli-share-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=cli-share",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx ai-share *)",
+      "Bash(npx claude-cli-share *)",
+      "Bash(npx cli-share *)"
+    ]
+  }
+}

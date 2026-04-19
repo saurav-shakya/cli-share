@@ -1,0 +1,34 @@
+# Dependecies
+node_modules/
+package-lock.json
+
+# Environment/Secrets
+.env
+.env.*
+.gitignore.swp
+
+# Local config (Security)
+.cli-share/
+.ai-share/
+
+# OS/System
+.DS_Store
+Thumbs.db
+
+# Logs
+/tmp/cli-session*
+/tmp/ai-session*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distributions
+dist/
+build/
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

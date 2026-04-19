@@ -1,0 +1,11 @@
+{
+  "name": "cli-share",
+  "version": "1.0.0",
+  "description": "Professional terminal conversation sharing for Claude Code.",
+  "author": "Saurav Shakya",
+  "skills": {
+    "share": {
+      "path": "skills/share/SKILL.md"
+    }
+  }
+}
