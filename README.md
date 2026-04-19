@@ -95,6 +95,15 @@ When you are in a Claude Code session, you can simply type `/share`:
 ● Your conversation has been shared publicly!
 ```
 
+### 💡 Example Use Cases
+
+*   **Example 1: Bug Debugging** 🐛
+    You're working with Claude Code and hit a complex build error. Instead of copy-pasting lines, type `/share` and send the Gist link to a teammate. They'll see the exact terminal state, including color-coded errors.
+*   **Example 2: Documentation & Tutorials** 📝
+    Capturing a perfect "Getting Started" workflow? Use `cli-share` to generate a beautiful Markdown log that you can embed directly into your project's documentation or a blog post.
+*   **Example 3: GitHub Issue Reporting** 🚩
+    When reporting a CLI bug to an open-source project, provide a `cli-share` link. It gives maintainers a high-fidelity look at the terminal output, making it much easier for them to diagnose the issue.
+
 ---
 
 ## 🏗️ Monorepo Structure
