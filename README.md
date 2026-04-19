@@ -94,6 +94,8 @@ When you are in a Claude Code session, you can simply type `/share`:
 
 ● Your conversation has been shared publicly!
 ```
+<img width="1043" height="752" alt="Screenshot from 2026-04-19 16-53-47" src="https://github.com/user-attachments/assets/4c29e2b4-44b8-45c4-b200-dec1247b1ea0" />
+
 
 ### 💡 Example Use Cases
 
