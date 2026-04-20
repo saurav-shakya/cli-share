@@ -2,20 +2,40 @@
 description: Share this conversation to GitHub Gist
 ---
 
-To execute the cli-share CLI, you will use conversational arguments rather than interactive prompts to avoid breaking the session.
-When the user types `/share`, do the following:
-1. Ask the user exactly: "Do you want to share the (1)Full Conversation or a (2)Custom Range? \n (3)Public or (4)Private ?"
-2. Wait for their response. If they say "Custom Range", clarify what the line number range is (e.g., "10-20").
-3. Once you have their decisions, execute the bash command non-interactively using the correct flags.
+# Share Conversation
 
-Available flags:
-Mode: `--full` OR `--range=START-END`
-Visibility: `--public` OR `--private`
+IMPORTANT: The npm package name is `@saurav-singh/cli-share` (scoped package). You MUST use this exact name. Do NOT use `cli-share` without the scope.
 
-Example Commands you should run based on their answer:
-`npx @saurav-singh/cli-share --full --public`
-`npx @saurav-singh/cli-share --range=10-20 --private`
+When the user invokes this skill, do the following:
 
-Do NOT use `! npx @saurav-singh/cli-share`. Run it standardly once you have the flags!
-After the CLI outputs the URL, show the URL to the user.
+1. Ask the user: "Do you want to share the (1) Full Conversation or a (2) Custom Range?\n(3) Public or (4) Private?"
+2. Wait for their response. If they choose "Custom Range", ask for the line number range (e.g., "10-20").
+3. Once you have their choices, run the command using the EXACT package name shown below.
 
+## Command Format
+
+ALWAYS use `@saurav-singh/cli-share` as the package name. Never omit the `@saurav-singh/` scope.
+
+For full conversation, public:
+```bash
+npx @saurav-singh/cli-share --full --public
+```
+
+For full conversation, private:
+```bash
+npx @saurav-singh/cli-share --full --private
+```
+
+For custom range, public:
+```bash
+npx @saurav-singh/cli-share --range=START-END --public
+```
+
+For custom range, private:
+```bash
+npx @saurav-singh/cli-share --range=START-END --private
+```
+
+Replace START-END with the actual line numbers the user specified.
+
+After the CLI outputs the URL, display the Gist URL to the user.
