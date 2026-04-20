@@ -1,6 +1,15 @@
 # 🚀 CLI Share
 
 **Share your terminal conversations instantly as professional GitHub Gists.**
+## 🚀 Product Demo
+
+Here’s a quick look at how it works in real time:
+
+👉 https://x.com/sauravv_x/status/2046304601515950271?s=20
+
+[![Watch Demo](https://img.shields.io/badge/Watch%20Demo%20on-X-111?style=for-the-badge\&logo=twitter)](https://x.com/sauravv_x/status/2046304601515950271?s=20)
+
+
 
 CLI Share is a powerful tool designed for developers using AI CLI tools (like Claude Code, Codex, and others). It captures your terminal session, cleans up the mess of ANSI codes and animations, and publishes a beautiful, readable Markdown file to GitHub Gists.
 
