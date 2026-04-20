@@ -37,10 +37,12 @@ CLI Share works best when integrated directly into your **Claude Code** session 
 The easiest way to install CLI Share is using the native plugin system:
 ```bash
 /plugin marketplace add saurav-shakya/cli-share
+/plugin install cli-share@cli-share-marketplace
 ```
+After installation, use `/cli-share:share` in any Claude Code session.
 
 ### Method B: Manual Skill Setup
-If you prefer manual setup, copy the skill definition to your Claude config:
+If you prefer manual setup (gives you `/share` without namespace), copy the skill definition:
 ```bash
 mkdir -p ~/.claude/commands/
 cp packages/claude-plugin/commands/share.md ~/.claude/commands/
@@ -80,7 +82,7 @@ cli-share --range=1-50 --private
 
 ### 🎨 How it looks in Claude Code
 
-When you are in a Claude Code session, you can simply type `/share`:
+When you are in a Claude Code session, use `/cli-share:share` (plugin) or `/share` (manual setup):
 
 ```text
 ❯ /share
