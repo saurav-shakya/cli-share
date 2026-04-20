@@ -1,11 +1,8 @@
 {
   "name": "cli-share",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Professional terminal conversation sharing for Claude Code.",
-  "author": "Saurav Shakya",
-  "skills": {
-    "share": {
-      "path": "packages/claude-plugin/commands/share.md"
-    }
+  "author": {
+    "name": "Saurav Shakya"
   }
 }
